@@ -1,0 +1,95 @@
+.create_post {
+    display: flex;
+    width: 70%;
+    margin-top: 10px;
+}
+
+.profile_section_wrap {
+    display: flex;
+}
+
+.app_content {
+    background-color: #fff;
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 20px;
+    height: max-content;
+    margin-bottom: 20px;
+}
+
+.profile_section_wrap img {
+    width: 100%;
+    max-width: 50px;
+    margin: 10px 20px 0px 0px;
+    height: max-content;
+}
+
+.profile_info{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.profile_info h3{
+    margin-top: 4%;
+}
+
+.create_post button{
+    border: none;
+    background-color: #e44d3a;
+    color: #fff;
+    font-size: 16px;
+    height: 40px;
+    padding: 0 15px;
+    line-height: 40px;
+    font-weight: 500;
+    border-radius: 3px;
+    width: 35%;
+    cursor: pointer;
+}
+
+.create_post button:hover{
+    background-color: #c14434;
+    transition: 0.3s;
+}
+
+.create_post textarea{
+    max-height: 20px;
+    background-color: #f3f3f3;
+    border: none;
+    padding: 10px 10px 10px;
+    margin-right: 20px;
+    font-family: 'Roboto', sans-serif;
+    resize : none;
+    width: 100%;
+    color: #888484;
+}
+.create_post textarea::-webkit-scrollbar { width: 3px; height: 10px;}
+.create_post textarea::-webkit-scrollbar-button {  background-color: #d4d3d3; height: 0px; }
+.create_post textarea::-webkit-scrollbar-track {  background-color: #999;}
+.create_post textarea::-webkit-scrollbar-track-piece { background-color: #ded3d3; height: 12px;}
+.create_post textarea::-webkit-scrollbar-thumb { height: 0px; background-color: #e44d3a; border-radius: 3px;}
+.create_post textarea::-webkit-scrollbar-corner { background-color: #999;}
+.create_post textarea::-webkit-resizer { background-color: #666;}
+
+.create_post textarea::-webkit-input-placeholder {
+    color: #b2b2b2;
+}
+    
+.create_post textarea:-moz-placeholder { 
+    color: #b2b2b2;  
+}
+
+.create_post textarea::-moz-placeholder { 
+    color: #b2b2b2;  
+}
+
+textarea:-ms-input-placeholder {
+    color: #b2b2b2;  
+}
+
+.profile_info h3 {
+    font-weight: 500;
+    margin-bottom: 10px;
+}

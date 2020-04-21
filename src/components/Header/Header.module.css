@@ -1,0 +1,10 @@
+.app_header{
+    width: 100%;
+    background-color: #e44d3a;
+    padding: 10px 0px;
+}
+  
+.app_header img{
+    margin-right: 14px;
+    width: 34px;
+}

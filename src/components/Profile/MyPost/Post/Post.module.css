@@ -1,0 +1,73 @@
+.app_content {
+    background-color: #fff;
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 20px;
+    height: max-content;
+    margin-bottom: 20px;
+  }
+  
+  .app_main_wrap {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .app_main_wrap img {
+    width: 100%;
+    object-fit: cover;
+    max-width: 100%;
+  }
+  
+  .profile_section_wrap {
+    display: flex;
+    padding-bottom: 20px;
+  }
+  
+  .profile_info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .profile_section_wrap img {
+    width: 100%;
+    max-width: 50px;
+    margin: 10px 20px 0px 0px;
+    height: max-content;
+  }
+  
+  .profile_info h3 {
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  .profile_info__sub p {
+    line-height: 22px;
+  }
+  
+  .main_content_wrap {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  
+  .like_com{
+    display: flex;
+    width: 17%;
+    justify-content: space-between;
+    margin: 15px 0px 10px;
+    color: #b2b2b2;
+    font-size: 14px;
+}
+
+.like_com img{
+    width: 20px;
+    height: 20px;
+    margin-top: 0px;
+    padding-right: 8px;
+}
+
+.like_item p span{
+  margin-right: 4px;
+}

@@ -1,0 +1,224 @@
+.gialogs_wrap{
+    display: flex;
+    background-color: #fff;
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    width: 100%;
+}
+
+
+.list_gialog__all{
+    display: flex;
+    flex-direction: column;
+    width: 38%;
+    max-height: 570px;
+    overflow-y: scroll;
+}
+
+.gialog_item{
+    display: flex;
+    padding: 20px;
+    border-bottom: 1px solid #eeeeee;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+.gialog_item_this{
+    display: flex;
+    padding: 20px;
+    border-bottom: 1px solid #eeeeee;
+    cursor: pointer;
+    justify-content: flex-start;
+}
+.gialog_item h4,
+.gialog_item_this h4{
+    font-weight: 500;
+    margin-bottom: 7px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.usr_dialog_info{
+    width: 78%;
+    margin-top: 7px;
+}
+
+.usr_dialog_info p,
+.list_gialog__all a{
+    color: #686868;
+    outline: none;
+}
+
+.usr_dialog_info p{
+    max-height: 16px;
+    overflow: hidden;
+}
+
+.list_gialog__all a:hover{
+    background-color: #e4e4e4;
+    transition: 0.4s;
+}
+
+.usr_dialog__img{
+    width: 20%;
+}
+
+.gialog_item_this_img{
+    width: 12%;
+}
+.usr_dialog_info span,
+.gialog_item_this p{
+    color: #b2b2b2;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.dialogs_messages__all{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-height: 570px;
+    overflow-y: scroll;
+    width: 70%;
+    overflow-x: hidden;
+}
+
+.usr_dialog_info_online{
+    margin-top: 8px;
+}
+
+.message_bar__head{
+    width: 100%;
+    background-color: rgba(255,255,255,0.95);
+    border-bottom: 1px solid #eaeaea;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 11;
+}
+
+.single_dialog{
+    background-color: #fff;
+    padding: 28px;
+}
+
+.your_message,
+.friend_message{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.your_message{
+    margin-left: auto;
+    margin-right: 0;
+    max-width: 21em;
+}
+
+.text_message_wrap{
+    display: flex;
+    flex-direction: column;
+    max-width: 290px;
+}
+
+.text_message_box{
+    background-color: #e44d3a;
+    color: #fff;
+}
+.text_message_box_friend,
+.text_message_box{
+    font-size: 14px;
+    line-height: 22px;
+    padding: 10px 25px 10px 25px;
+    border-radius: 15px;
+    min-width: 225px;
+}
+
+.text_message_box_friend{
+    background-color: #efefef;
+    color: #686868;
+}
+.message_date{
+    color: #b2b2b2;
+    font-size: 14px;
+    margin-top: 7px;
+}
+
+.your_message .message_date{
+    margin-left: auto;
+}
+
+.user_avatar{
+    margin-top: auto;
+}
+
+.your_message .user_avatar{  
+    margin-left: 15px;
+}
+
+.friend_message .user_avatar{
+    margin-right: 15px;
+}
+
+.list_gialog__all::-webkit-scrollbar { width: 2px; height: 70px;}
+.list_gialog__all::-webkit-scrollbar-button {  background-color: #d4d3d3; height: 0px; }
+.list_gialog__all::-webkit-scrollbar-track {  background-color: #f4f4f4; height: 10px;}
+.list_gialog__all::-webkit-scrollbar-track-piece { background-color: #c5c1c1; height: 70px;}
+.list_gialog__all::-webkit-scrollbar-thumb { background-color: #dfdbdb; border-radius: 3px;}
+.list_gialog__all::-webkit-scrollbar-corner { background-color: #999;}
+.list_gialog__all::-webkit-resizer { background-color: #666;}
+
+.dialogs_messages__all::-webkit-scrollbar { width: 6px; height: 70px;}
+.dialogs_messages__all::-webkit-scrollbar-button {  background-color: #d4d3d3; height: 0px; }
+.dialogs_messages__all::-webkit-scrollbar-track {  background-color: #f4f4f4; height: 10px;}
+.dialogs_messages__all::-webkit-scrollbar-track-piece { background-color: #ded3d3; height: 70px;}
+.dialogs_messages__all::-webkit-scrollbar-thumb { background-color: #f58b7e; border-radius: 3px;}
+.dialogs_messages__all::-webkit-scrollbar-corner { background-color: #999;}
+.dialogs_messages__all::-webkit-resizer { background-color: #666;}
+
+.send_message_area{
+    background-color: #f3f5f7;
+    padding: 25px 20px 15px 20px;
+    border: 1px solid #eeeeee;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    z-index: 13;
+}
+
+.type_message{
+    display: flex;
+}
+
+.type_message input{
+    width: 80%;
+    background-color: #fff;
+    color: #666;
+    font-size: 16px;
+    padding: 0 15px;
+    border: 1px solid #e6e6e6;
+    height: 45px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.type_message button{
+    width: 20%;
+    background-color: #e44d3a;
+    height: 45px;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    border: 0;
+    margin-left: 15px;
+    border-radius: 5px;
+}
+
+.list_gialog__all a{
+    text-decoration: none;
+}
+
+.wrapper{
+    display: flex;
+}
