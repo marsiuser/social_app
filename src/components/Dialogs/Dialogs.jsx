@@ -1,22 +1,8 @@
 import React from 'react';
 import classes from './Dialogs.module.css'
 import { NavLink } from 'react-router-dom';
-
-const DialogItem = (props) =>{
-    return (
-        <NavLink to={"/dialogs/"}>
-        <div className={classes.gialog_item}>
-            <div className={classes.usr_dialog__img}>
-                <img src={props.avatar} alt="user"/>
-            </div>
-            <div className={classes.usr_dialog_info}>
-                <h4>{props.name}<span>{props.date}</span></h4>
-                <p>{props.shortMes}</p>
-            </div>
-        </div>
-        </NavLink>
-    )
-}
+import DialogItem from './DialogItem/DialogItem';
+import CurrentMessage from './CurrentMessage/CurrentMessage';
 
 const DialogOpenUser = (props) => {
     return (
@@ -31,33 +17,6 @@ const DialogOpenUser = (props) => {
             </div>
         </div>
     </div>
-    )
-}
-
-const CurrentMessage = (props) => {
-    let messageData=[
-        {id: 1, message: 'Lorem ipsum dolor sit amet, consectetur'},
-        {id: 2, message: 'Lorem ipsum dolor'},
-        {id: 3, message: 'Lorem ipsum dolor sit amet'},
-        {id: 4, message: 'Hi'},
-        {id: 5, message: 'Lorem ipsum dolor sit amet, consectetur'},
-        {id: 6, message: 'News'},
-        {id: 7, message: 'Hello'}
-    ]
-    return(
-        <div className={classes.wrapper}>
-            <div className={classes.text_message_wrap}>
-                <div className={classes.text_message_box}>
-                <p>{messageData[4].message}</p>
-                </div>
-                <div className={classes.message_date}>
-                    <span>{props.current_date}</span>
-                </div>
-            </div>
-            <div className={classes.user_avatar}>
-                <img src={props.your_avatar} alt="your avatar"/>
-            </div>
-        </div>
     )
 }
 
@@ -80,24 +39,7 @@ const CurrentFriendMes = (props) => {
 }
 
 const Dialogs = (props) =>{
-    let dialogsData=[
-        {id: 1, name: 'Arina Chubyr', shortMes: 'smotri eto ti', avatar:'http://gambolthemes.net/workwise-new/images/resources/m-img3.png' },
-        {id: 2, name: 'Polina Demina', shortMes: 'hello', avatar: 'http://gambolthemes.net/workwise-new/images/resources/m-img1.png'},
-        {id: 3, name: 'Kirill Stepka', shortMes: 'how do  you sho', avatar: 'http://gambolthemes.net/workwise-new/images/resources/m-img4.png'},
-        {id: 4, name: 'Nikita Taraban', shortMes: 'create react app', avatar:'http://gambolthemes.net/workwise-new/images/resources/m-img3.png'},
-        {id: 5, name: 'Karina Berry', shortMes: 'illya pribsdfj', avatar:'http://gambolthemes.net/workwise-new/images/resources/m-img3.png'},
-        {id: 6, name: 'Illya Sirnik', shortMes: 'letoeo sgjjwd', avatar:'http://gambolthemes.net/workwise-new/images/resources/m-img3.png'},
-        {id: 7, name: 'Mash Noyu', shortMes: ' good lack', avatar:'http://gambolthemes.net/workwise-new/images/resources/m-img3.png'},
-        {id: 8, name: 'Arina Chubyr', shortMes: 'smotri eto ti', avatar:'http://gambolthemes.net/workwise-new/images/resources/m-img3.png' },
-        {id: 9, name: 'Polina Demina', shortMes: 'hello', avatar: 'http://gambolthemes.net/workwise-new/images/resources/m-img1.png'},
-        {id: 10, name: 'Kirill Stepka', shortMes: 'how do  you sho', avatar: 'http://gambolthemes.net/workwise-new/images/resources/m-img4.png'},
-        {id: 11, name: 'Nikita Taraban', shortMes: 'create react app', avatar:'http://gambolthemes.net/workwise-new/images/resources/m-img3.png'},
-        {id: 12, name: 'Karina Berry', shortMes: 'illya pribsdfj', avatar:'http://gambolthemes.net/workwise-new/images/resources/m-img3.png'},
-        {id: 13, name: 'Illya Sirnik', shortMes: 'letoeo sgjjwd', avatar:'http://gambolthemes.net/workwise-new/images/resources/m-img3.png'},
-        {id: 14, name: 'Mash Noyu', shortMes: ' good lack', avatar:'http://gambolthemes.net/workwise-new/images/resources/m-img3.png'}
-    ]
-    
-    let dialogsElements = dialogsData.map( dialog =>  <DialogItem name={dialog.name} id={dialog.id} shortMes={dialog.shortMes} avatar={dialog.avatar} /> );
+    let dialogsElements = props.dialogsData.map( dialog =>  <DialogItem name={dialog.name} id={dialog.id} shortMes={dialog.shortMes} avatar={dialog.avatar} /> );
     return  (
         <div className="app_wall">
             <div className={classes.gialogs_wrap}>

@@ -8,7 +8,8 @@ import MyPosts from './components/Profile/MyPost/MyPosts'
 import Dialogs from './components/Dialogs/Dialogs';
 import { Route, BrowserRouter } from 'react-router-dom';
 
-function App() {
+
+const App = (props) => {
   return (
     <BrowserRouter>
     <div className="app-wrapper">
@@ -17,8 +18,8 @@ function App() {
               <div className="main_content_wrapper">
                   <Navbar/>
                   <div className="social_page">
-                    <Route exact path="/dialogs" component={Dialogs} />
-                    <Route exact path="/profile" component={Profile} />
+                     <Route exact path="/dialogs" render={ () => <Dialogs dialogsData= {props.dialogsData} /> } />
+                      <Route exact path="/profile" render={ () => <Profile posts = {props.posts} /> }/>
                   </div>
               </div>
           </div>

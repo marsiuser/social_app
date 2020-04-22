@@ -1,7 +1,8 @@
 import React from 'react';
 import classes from './MyPost.module.css'
+import Post from './Post/Post';
 
-const MyPosts = () =>{
+const MyPosts = (props) =>{
     return (
         <div className={classes.app_content}>
             <div className={classes.main_content_wrap}>
